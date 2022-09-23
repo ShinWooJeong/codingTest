@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>출력결과</title>
+    </head>
+    <body>
+        <script>
+            function solution(a, b, c){
+                let arr = [a,b,c];
+                let answer=100
+                arr.forEach(num => {
+                    if(answer > num){
+                    answer = num
+                  }
+                });
+                // if(a>b){
+                //     answer = b
+                // }else {
+                //     answer = a
+                // }
+                // if(answer > c){
+                //     answer = c
+                // }
+                
+                return answer;
+            }
+
+            console.log(solution(3, 80, 5));
+        </script>
+    </body>
+</html>

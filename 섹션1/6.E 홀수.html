@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>출력결과</title>
+    </head>
+    <body>
+        <script>
+            function solution(arr){
+                let answer=[];
+                let sum =0, min = Number.MAX_SAFE_INTEGER
+                arr.forEach(num =>{
+                    if(num % 2 != 0) answer.push(num)
+                })
+                answer.forEach(odd => {
+                    sum += odd;
+                    if(odd < min) min = odd
+                })
+                answer[0] = sum
+                answer[1] = min
+                    
+                return answer;
+            }
+            
+            arr=[12, 77, 38, 41, 53, 92, 85];
+            console.log(solution(arr)[0]);//sum
+            console.log(solution(arr)[1]);//min
+        </script>
+    </body>
+</html>

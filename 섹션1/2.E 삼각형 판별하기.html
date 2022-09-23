@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>출력결과</title>
+    </head>
+    <body>
+        <script>
+            function solution(a, b, c){
+                let answer="YES", max=0;
+                let arr = [a,b,c];
+                let sum=a+b+c;
+                arr.forEach((num, i) => {
+                    // console.log('@@', i, num,max,sum)
+                    if(max < num){
+                        max = num
+                    }
+                });
+                if (sum-max < max){
+                    answer ='NO'
+                }
+                
+                return answer+ '333';
+            }
+
+            console.log(solution(6, 8, 11));
+        </script>
+    </body>
+</html>
