@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>출력결과</title>
+    </head>
+    <body>
+        <script>
+            function solution(s){  
+                let answer;
+                let middle = Math.round(s.length/2)-1
+                if(s.length % 2 == 0){
+                    answer = s[middle] + s[middle+1]
+                } else { answer = s[middle] }
+                return answer;
+            }
+            console.log(solution("study"));
+        </script>
+    </body>
+</html>
